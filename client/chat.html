@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Daily chat</title>
+
+	<script src="static/js/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Daily chat</a>
+			</div>
+
+		</div>
+	</nav>
+
+	
+
+
+
+	<div class="container-fluid codntainer" id="main-container">
+   <div class="row">
+      <div class="col-sm-2">
+         <div data-offset-top="0">
+            <div class="list-group" id="conversations-history-list">
+              
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="container-w">
+
+
+		<table id="chat-window">
+
+			<tr>
+				<td>
+					<div id="chat-content-wrapper"></div>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div id="chat-input-wrapper">
+						<div class="input-group">
+							<textarea class="form-control" id="chat-input"></textarea>
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">send</button>
+							</span>
+						</div>
+
+					</div>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+      </div>
+      <div class="col-sm-2">
+         <div data-offset-top="0">
+            <div class="list-group active-users-list" id="active_users">
+            </div>
+         </div>
+         
+      </div>
+   </div>
+</div>
+
+<div id="active_user_entry" style="display:none;">
+<div class="user-entry">
+<span class="username-entry" id="username"></span><span id="user-status" class="user-status"></span>
+</div>
+</div>
+
+<div id="conversations_history_entry_template" style="display:none;">
+<a href="javascript:;" class="list-group-item content">
+<span class="conversation-date"></span>
+<span class="conversation-count">Messages: <span class="conversation-count-value"></span></span>
+</a>
+</div>
+
+</div>
+	<script src="./static/js/controller.js"></script>
+</body>
+</html> 

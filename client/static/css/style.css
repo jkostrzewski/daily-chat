@@ -1,0 +1,91 @@
+#main-container{
+	margin-top: 100px;
+}
+
+#chat-window{
+	width:95%;
+	height: 200px; 
+	border:1px solid #aaa; 
+	margin:auto auto; 
+	border-radius:2px; 
+	
+}
+#chat-window td{
+	padding:1px;
+}
+
+#chat-content-wrapper
+{ 
+	background:#fff; 
+	overflow-y: auto;	
+	margin:2px;
+	border:1px solid #aaa; 
+	height:400px;
+}
+
+#chat-content-wrapper p
+{
+	padding-top:3px; 
+	padding-bottom:3px; 
+	padding-right:5px; 
+	padding-left:5px; 
+	margin:0;
+}
+
+#status { width:88px; display:block; float:left; margin-top:15px; }
+
+#chat-input-wrapper{	
+	width:100%;
+}
+#chat-input{
+	height:34px;
+}
+
+.username-entry{
+	margin:2px;
+	font-size: 0.95em;
+
+}
+
+.user-status{
+    background-color: green;
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    position:relative;
+    float:right;
+    margin: 4px 6px 0px 0px;
+    border-radius: 5px;
+}
+
+.user-status.offline{
+	background-color: silver;
+}
+.user-entry-wrapper{
+	display:inline-block;
+}
+
+.active-users-list{
+	border: 1px solid #ddd;
+	background-color: #aaaaaa;
+}
+.user-entry{
+	background-color: #fff;
+    display: block;
+    position: relative;
+    padding:2px;
+}
+
+.conversation-date{
+	display:block;
+}
+
+.conversation-count{
+	display:block;
+	font-size:0.9em;
+	font-style: italic;
+}
+
+#chat-content-wrapper p:nth-child(even){
+	background-color: #eeeeee;
+}
